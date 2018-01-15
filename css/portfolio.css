@@ -1,0 +1,164 @@
+#Portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Portfolio .portfolio-title h5 {
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 2rem;
+    margin: 15% 0;
+    font-weight: 100;
+}
+
+#Portfolio .tab-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 1% 0;
+}
+
+#Portfolio .tab-row a {
+    padding: 0.5% 4%;
+    width: 25%;
+    margin: 0 1%;
+}
+
+#Portfolio .tab-row p {
+    margin: 0;
+    font-size: 1.25rem;
+    font-family: 'Cinzel', serif;
+}
+
+#Portfolio .portfolio-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Portfolio .portfolio-block {
+    width: 50%;
+    height: 100%;
+}
+
+.caption-style {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.caption-style li {
+    width: 100%;
+    height: 30rem;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style li:hover .caption {
+    opacity: 1;
+}
+
+.caption {
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+
+.blur {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 30rem;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caption-text h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.caption-text i {
+    font-size: 2em;
+    color: #fff;
+    padding: 0 10% 3%;
+}
+
+
+/* Reveal */
+
+.hvr-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 2px rgba(22, 22, 22, 0.2);
+    transition: all .2s;
+}
+
+.hvr-active {
+    border: 1px solid #DAA520;
+    box-shadow: 0 3px 10px rgba(22, 22, 22, 0.4);
+}
+
+.hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0 solid #DAA520;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-reveal:hover:before,
+.hvr-reveal:focus:before,
+.hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 3px;
+    box-shadow : 0 0rem 4rem rgba(0, 0, 0, 0.2);
+}
