@@ -95,18 +95,6 @@
     background-image: url('../img/jack.jpg');
 }
 
-#Hero .image-section .hero-article {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 5%;
-}
-
-#Hero .image-section .hero-article h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-}
-
 
 /*  */
 
@@ -150,8 +138,9 @@
 
 #Hero .logo-span h4 {
     font-family: 'Cinzel', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
+    letter-spacing: 2px;
     margin: 2% 1%;
     text-shadow: -1px 2px 0px #222;
 }

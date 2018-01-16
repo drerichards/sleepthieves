@@ -16,6 +16,12 @@
     font-weight: 100;
     font-family: 'Cinzel', serif;
     margin: 1%;
+    color: #ffd700;
+    text-shadow: -1px 0px 2px #000;
+}
+
+#About p {
+    font-size: 1.2rem;
 }
 
 #About i {
@@ -31,6 +37,7 @@
 
 #About .icon-box h5 {
     margin: 5% 0;
+    font-family: 'Cinzel', serif;
     font-size: 0.7em;
 }
 

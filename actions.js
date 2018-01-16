@@ -117,7 +117,7 @@ const clientQuote = () => {
 {
     scrollToSection()
     changeFolioPics()
-    waveCounter()
+    // waveCounter()
     clientQuote()
 
     $('.collapse').on('click', function (e) {

@@ -1,0 +1,140 @@
+#Brands {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+}
+
+#Brands .brand-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#Brands hr {
+    width: 100%;
+    margin: 1% 0;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -moz-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -ms-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -o-linear-gradient(left, #DAA520, #fff, #DAA520);
+}
+
+#Brands .brand-title {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+#Brands h1 {
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 2%;
+    color: #d7b91b;
+    letter-spacing: 3px;
+    text-shadow: -1px 0px 2px #000;
+}
+
+#Brands .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#Brands .brand-container .brand-blocks {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0 4px 5px #eee;
+    flex: 1;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+#Brands .brand-container .brand-blocks:hover,
+#Brands .brand-container .brand-blocks:focus,
+#Brands .brand-container .brand-blocks:active {
+    color: #ffffff;
+}
+
+.block1 {
+    flex: 2;
+}
+
+.block2,
+.block3 {
+    flex-direction: column;
+}
+
+.john {
+    flex: 3;
+}
+
+.john:hover,
+.john:focus,
+.john:active {
+    background-color: #59CD90;
+}
+
+.lore {
+    flex: 1;
+}
+
+.lore:hover,
+.lore:focus,
+.lore:active {
+    background-color: rgb(50, 165, 241);
+}
+
+.ysl {
+    flex: 2;
+}
+
+.ysl:hover,
+.ysl:focus,
+.ysl:active {
+    background-color: #EDAE49;
+}
+
+.calla:hover,
+.calla:focus,
+.calla:active {
+    background-color: #FC7A57;
+}
+
+.tag:hover,
+.tag:focus,
+.tag:active {
+    background-color: #114B5F;
+}
+
+.gq {
+    flex: 1;
+}
+
+.gq:hover,
+.gq:focus,
+.gq:active {
+    background-color: #C84630;
+}
+
+.mens:hover,
+.mens:focus,
+.mens:active {
+    background-color: #60E1E0;
+}
