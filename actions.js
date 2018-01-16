@@ -119,4 +119,10 @@ const clientQuote = () => {
     changeFolioPics()
     waveCounter()
     clientQuote()
+
+    $('.collapse').on('click', function (e) {
+        e.preventDefault()
+        let delta = 0
+        $(this).toggleClass('active')
+    })
 }

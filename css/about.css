@@ -17,3 +17,23 @@
     font-family: 'Cinzel', serif;
     margin: 1%;
 }
+
+#About i {
+    font-size: 10rem;
+}
+
+#About .icon-row {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1% auto;
+}
+
+#About .icon-box h5 {
+    margin: 5% 0;
+    font-size: 0.7em;
+}
+
+#About .icon-box i {
+    font-size: 3rem;
+}
