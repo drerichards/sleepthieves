@@ -7,15 +7,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
+    <header class="logo-container">
+        <i class="fa fa-stumbleupon-circle fa-5x" aria-hidden="true"></i>
+        <div>
+            <h1>Sleep Thieves</h1>
+            <h4>Digital Advertising Agency</h4>
+        </div>
+
+    </header>
+    <div class="navigation">
+        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation-button">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation-background">&nbsp;</div>
+
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>01</span>Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>02</span>About</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>03</span>Portfolio</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>04</span>Services</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>05</span>Brands</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span>06</span>Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header id="Hero">
         <main class="image-section">
             <div id="strip" class="hero-img">
@@ -31,13 +79,9 @@
                 </div>
             </div>
         </main>
-        <aside class="logo-section">
+        <!-- <aside >
             <div class="logo-span">
                 <hr>
-                <h1>Sleep Thieves</h1>
-                <i class="fa fa-stumbleupon-circle fa-5x" aria-hidden="true"></i>
-                <h4>Digital Advertising Agency</h4>
-                <img src="img/floris.png" style="width: 55%; height: 10%">
                 <h3 style="font-family: serif; color: #ffffff;">
                     <em>
                         New York, NY 10001
@@ -45,7 +89,7 @@
                 </h3>
                 <hr>
             </div>
-        </aside>
+        </aside> -->
     </header>
 
     <section id="About">
@@ -259,7 +303,6 @@
                     Consectetur adipisicing elit. Autem architecto suscipit quia voluptate quibusdam quam vel ratione.
                 </p>
             </div>
-            <!-- </div> -->
         </div>
 
     </section>
@@ -288,6 +331,16 @@
                 </div>
             </div>
             <div class="brand-blocks gq" style="background-image: url('img/brands/gqmag.png')"></div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="bg-video">
+            <video class="bg-video-content" autoplay muted loop>
+                <source src="img/video/video.mp4" type="video/mp4">
+                <!-- <source src="img/video/video.webm" type="video/webm"> Your browser is not supported! -->
+            </video>
+<img src="img/floris.png" style="width: 15%; height: 10%">
+            
         </div>
     </section>
 

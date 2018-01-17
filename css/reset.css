@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:300|Cinzel|Fredericka+the+Great|Jacques+Francois+Shadow|Londrina+Sketch|Mate+SC');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Cinzel|Cinzel+Decorative');
 * {
     box-sizing: border-box;
 }
@@ -13,6 +13,7 @@ html {
 
 body {
     margin: 0;
+    position: relative;
 }
 
 article,

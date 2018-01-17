@@ -1,6 +1,7 @@
 #Services {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
+    padding: 3% 0;
     background-image: url('../img/bkgd.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
