@@ -1,4 +1,4 @@
-#Brands {
+#BrandsSection {
     display: flex;
     height: 60vh;
     width: 100%;
@@ -6,13 +6,13 @@
     flex-direction: column;
 }
 
-#Brands .brand-container {
+#BrandsSection .brand-container {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-#Brands hr {
+#BrandsSection hr {
     width: 100%;
     margin: 2% 0;
     border: 0;
@@ -23,30 +23,30 @@
     background-image: -o-linear-gradient(left, #DAA520, #fff, #DAA520);
 }
 
-#Brands .brand-title {
+#BrandsSection .brand-title {
     display: flex;
     justify-content: center;
     margin: 1% 0;
 }
 
-#Brands h1 {
+#BrandsSection h1 {
     font-weight: 100;
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel Decorative', serif;
     margin: 0;
     padding: 2%;
-    color: #d7b91b;
+    color: #6c5d0b;
     letter-spacing: 3px;
-    text-shadow: -1px 0px 2px #000;
+    /* text-shadow: -1px 0px 2px #000; */
 }
 
-#Brands .block {
+#BrandsSection .block {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-#Brands .brand-container .brand-blocks {
+#BrandsSection .brand-container .brand-blocks {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -65,9 +65,9 @@
     transition-property: color, background-color;
 }
 
-#Brands .brand-container .brand-blocks:hover,
-#Brands .brand-container .brand-blocks:focus,
-#Brands .brand-container .brand-blocks:active {
+#BrandsSection .brand-container .brand-blocks:hover,
+#BrandsSection .brand-container .brand-blocks:focus,
+#BrandsSection .brand-container .brand-blocks:active {
     color: #ffffff;
 }
 

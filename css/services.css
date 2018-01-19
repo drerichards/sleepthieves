@@ -1,4 +1,4 @@
-#Services {
+#ServicesSection {
     height: 60vh;
     width: 100%;
     padding: 3% 0;
@@ -7,25 +7,24 @@
     background-repeat: no-repeat;
 }
 
-#Services h1 {
+#ServicesSection h1 {
     font-weight: 100;
     text-align: center;
     font-family: 'Cinzel', serif;
     margin: 0;
     padding: 2%;
-    color: #5d500b;
+    color: #6c5d0b;
     letter-spacing: 3px;
-    text-shadow: -1px 0px 2px #fff;
 }
 
-#Services .collapse-row {
+#ServicesSection .collapse-row {
     margin: 0 auto;
     width: 95%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#Services .collapse {
+#ServicesSection .collapse {
     width: 25%;
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid #eee;
@@ -38,14 +37,14 @@
     transition: all 0.4s, max-height .001s;
 }
 
-#Services .collapse * {
+#ServicesSection .collapse * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     transition: all .002s;
 }
 
-#Services .collapse.active {
+#ServicesSection .collapse.active {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.2);
     z-index: 2;
@@ -56,7 +55,7 @@
     transition: all 0.4s, max-height .8s;
 }
 
-#Services .collapse h2 {
+#ServicesSection .collapse h2 {
     font-size: 18px;
     font-family: 'Cinzel', serif;
     line-height: 20px;
@@ -64,13 +63,13 @@
     display: inline-block;
 }
 
-#Services .collapse-title {
+#ServicesSection .collapse-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#Services hr {
+#ServicesSection hr {
     width: 100%;
     margin: 0;
     border: 0;
@@ -81,7 +80,7 @@
     background-image: -o-linear-gradient(left, #DAA520, #000, #DAA520);
 }
 
-#Services .collapse hr {
+#ServicesSection .collapse hr {
     width: 100%;
     margin: 1% 0;
     border: 0;

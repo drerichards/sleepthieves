@@ -1,33 +1,28 @@
 .logo-container {
-    position: fixed;
     z-index: 999;
-    width: 45%;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-family: 'Cinzel', serif;
-    padding: 0.5% 1%;
-    /* background: linear-gradient(to right, white, transparent) */
+    padding: 3.5% 1%;
 }
 
 .logo-container h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 100;
     font-family: 'Cinzel Decorative', cursive;
     margin: 0;
-    font-weight: 800;
-    color: #a39037;
     letter-spacing: 5px;
-    text-shadow: 0px 2px 2px #000;
 }
 
 .logo-container h4 {
-    color: #614548;
+    color: #97404a;
     letter-spacing: 2px;
     margin: 0;
 }
 
 .logo-container i {
-    color: #bcbcbc;
+    color: #b69f31;
     margin: 0 1%;
 }
 
@@ -65,7 +60,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -15%;
     z-index: 1500;
     opacity: 0;
     width: 0;
@@ -75,7 +70,7 @@
 .navigation-list {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 65%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -88,7 +83,6 @@
 
 .navigation-link:link,
 .navigation-link:visited {
-    display: inline-block;
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
@@ -97,13 +91,9 @@
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;
-    transition: all .4s;
-}
-
-.navigation-link:link span,
-.navigation-link:visited span {
-    margin-right: 1.5rem;
     display: inline-block;
+    transition: all .4s;
+    width: 25%;
 }
 
 .navigation-link:hover,

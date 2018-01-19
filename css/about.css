@@ -1,4 +1,4 @@
-#About {
+#AboutSection {
     width: 60%;
     text-align: center;
     margin: 0 auto;
@@ -6,41 +6,41 @@
     padding: 1%;
 }
 
-#About h2 {
+#AboutSection h2 {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 100;
     margin-bottom: 1%;
 }
 
-#About h3 {
+#AboutSection h3 {
     font-weight: 100;
     font-family: 'Cinzel', serif;
     margin: 1%;
-    color: #ffd700;
+    color: #d3b305;
     text-shadow: -1px 0px 2px #000;
 }
 
-#About p {
+#AboutSection p {
     font-size: 1.2rem;
 }
 
-#About i {
+#AboutSection i {
     font-size: 10rem;
 }
 
-#About .icon-row {
+#AboutSection .icon-row {
     width: 80%;
     display: flex;
     justify-content: space-around;
     margin: 1% auto;
 }
 
-#About .icon-box h5 {
+#AboutSection .icon-box h5 {
     margin: 5% 0;
     font-family: 'Cinzel', serif;
     font-size: 0.7em;
 }
 
-#About .icon-box i {
+#AboutSection .icon-box i {
     font-size: 3rem;
 }

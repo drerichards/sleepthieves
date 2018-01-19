@@ -1,0 +1,149 @@
+#PressSection {
+    width: 100%;
+    height: 100vh;
+    margin: 2% auto;
+}
+
+#PressSection .press-section {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    position: relative;
+    padding: 0 1%;
+}
+
+#PressSection .press-img {
+    padding: 5%;
+}
+
+#PressSection .press-ad-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+#PressSection .press-ad-img .text-box {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 5% 3%;
+    margin: 3%;
+}
+
+#PressSection #strip-ad .text-box,
+#PressSection #type-ad .text-box {
+    display: none;
+}
+
+#PressSection .press-ad-img .text-box h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+}
+
+#PressSection .press-ad-img .text-box p {
+    font-size: 1.15rem;
+}
+
+#PressSection hr {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -moz-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -ms-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -o-linear-gradient(left, #DAA520, #000, #DAA520);
+}
+
+#PressSection h1 {
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    margin: 0;
+    padding-top: 2%;
+    color: #806f13;
+    letter-spacing: 3px;
+}
+
+#PressSection hr {
+    width: 100%;
+    margin: 2% 0;
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -moz-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -ms-linear-gradient(left, #DAA520, #fff, #DAA520);
+    background-image: -o-linear-gradient(left, #DAA520, #fff, #DAA520);
+}
+
+#PressSection #strip {
+    margin-top: 3%;
+    z-index: 3;
+    opacity: 0.5;
+    background-image: url('../img/strips.jpg');
+}
+
+#PressSection #paint {
+    margin-left: -20%;
+    margin-top: 1%;
+    left: 45%;
+    z-index: 4;
+    background-image: url('../img/paint.jpg');
+}
+
+#PressSection #type {
+    margin-top: 3%;
+    right: 1%;
+    z-index: 2;
+    opacity: 0.5;
+    background-image: url('../img/type.jpg');
+}
+
+#PressSection #strip,
+#PressSection #paint,
+#PressSection #type {
+    width: 45%;
+    height: 90%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#PressSection #strip:hover,
+#PressSection #paint:hover,
+#PressSection #type:hover {
+    z-index: 10;
+    cursor: pointer;
+    transform: scale(1) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+#PressSection #strip:hover {
+    outline: 1.5rem solid rgba(98, 115, 167, 0.7);
+}
+
+#PressSection #paint:hover {
+    outline: 1.5rem solid rgba(253, 215, 219, 0.7);
+}
+
+#PressSection #type:hover {
+    outline: 1.5rem solid rgba(104, 75, 71, 0.7);
+}
+
+#PressSection #strip-ad {
+    background-image: url('../img/modelbw.jpg');
+}
+
+#PressSection #paint-ad {
+    background-image: url('../img/model.jpg');
+}
+
+#PressSection #type-ad {
+    background-image: url('../img/jack.jpg');
+}

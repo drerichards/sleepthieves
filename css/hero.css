@@ -1,159 +1,19 @@
-#Hero {
+#HeroSection {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     margin: 0 auto;
-    /* box-shadow: 0 0rem 4rem rgba(0, 0, 0, 0.2); */
-}
-
-#Hero .image-section {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 95%;
-    display: flex;
-    align-items: flex-end;
     position: relative;
-    padding: 1%;
 }
+ #HeroSection .bg-video {
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+ }
 
-#Hero .hero-img {
-    padding: 5%;
-}
+ #HeroSection .bg-video-content {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
 
-#Hero #strip {
-    margin-top: 3%;
-    z-index: 3;
-    background-image: url('../img/strips.jpg');
-}
-
-#Hero #paint {
-    margin-left: -20%;
-    margin-top: 1%;
-    left: 45%;
-    z-index: 4;
-    background-image: url('../img/paint.jpg');
-}
-
-#Hero #type {
-    margin-top: 3%;
-    right: 2%;
-    z-index: 2;
-    background-image: url('../img/type.jpg');
-}
-
-#Hero #strip,
-#Hero #paint,
-#Hero #type {
-    width: 45%;
-    height: 90%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-#Hero #strip:hover,
-#Hero #paint:hover,
-#Hero #type:hover {
-    z-index: 10;
-    cursor: pointer;
-    transform: scale(1) translateY(-0.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-}
-
-#Hero #strip:hover {
-    outline: 1.5rem solid rgba(98, 115, 167, 0.7);
-}
-
-#Hero #paint:hover {
-    outline: 1.5rem solid rgba(253, 215, 219, 0.7);
-}
-
-#Hero #type:hover {
-    outline: 1.5rem solid rgba(104, 75, 71, 0.7);
-}
-
-#Hero .hero-ad-img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#Hero #strip-ad {
-    background-image: url('../img/modelbw.jpg');
-}
-
-#Hero #paint-ad {
-    background-image: url('../img/model.jpg');
-}
-
-#Hero #type-ad {
-    background-image: url('../img/jack.jpg');
-}
-
-
-/*  */
-
-#Hero .logo-section {
-    background-color: rgb(233, 198, 0);
-    background-attachment: fixed;
-    background-size: auto;
-    background-repeat: no-repeat;
-    width: 30%;
-    display: flex;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-#Hero .logo-span {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: auto;
-    padding: 3%;
-    text-align: center;
-    background-color: rgb(50, 88, 88);
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.603);
-    border-radius: 6px;
-}
-
-#Hero .logo-span h1 {
-    font-size: 5rem;
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: 100;
-    margin: 0;
-    color: #fff;
-    text-shadow: -2px 3px 12px #000;
-}
-
-#Hero .logo-span i {
-    font-size: 7rem;
-}
-
-#Hero .logo-span h4 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-    color: #ffffff;
-    letter-spacing: 2px;
-    margin: 2% 1%;
-    text-shadow: -1px 2px 0px #222;
-}
-
-#Hero hr {
-    width: 100%;
-    margin: 5% 0;
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, #DAA520, #000, #DAA520);
-    background-image: -moz-linear-gradient(left, #DAA520, #000, #DAA520);
-    background-image: -ms-linear-gradient(left, #DAA520, #000, #DAA520);
-    background-image: -o-linear-gradient(left, #DAA520, #000, #DAA520);
-}

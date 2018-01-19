@@ -1,22 +1,89 @@
-#Contact {
+#ContactSection {
     width: 100%;
-    height: 70vh;
+    height: 45vh;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 2%;
 }
 
-#Contact .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+#ContactSection .contact-main {
+    width: 50%;
     height: 100%;
-    width: 100%;
-    z-index: -1;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#Contact .bg-video-content {
+#ContactSection .contact-main .icons {
+    width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#ContactSection .contact-info {
+    display: flex;
     width: 100%;
-    object-fit: cover;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+
+#ContactSection .contact-info>div {
+    width: 100%;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+}
+
+#ContactSection .contact-info i {
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 15px 17.5px;
+    margin: 0 5%;
+    font-size: 1.7em;
+    color: #DAA520;
+}
+
+#ContactSection .contact-info p {
+    display: inline-block;
+}
+
+#ContactSection .contact-info>div:nth-child(2)>i {
+    padding: 15px 21.5px;
+}
+
+#ContactSection footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-flow: row nowrap;
+}
+
+#ContactSection footer i {
+    margin: 0 0.5%;
+    transition: all .2s;
+}
+
+#ContactSection footer i:hover {
+    cursor: pointer;
+}
+
+#ContactSection footer i:nth-child(1):hover {
+    color:#3b5998;
+}
+#ContactSection footer i:nth-child(2):hover {
+    color:#bc2a8d;
+}
+#ContactSection footer i:nth-child(3):hover {
+    color:#fffc00;
+}
+#ContactSection footer i:nth-child(4):hover {
+    color:#55acee;
+}
+#ContactSection footer i:nth-child(5):hover {
+    color:#ff0000;
 }

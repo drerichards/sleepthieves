@@ -1,23 +1,12 @@
 const scrollToSection = () => {
-    $('.nav-item a, .hvr-sink').click((e) => {
+    $('.navigation-item a').click((e) => {
         e.preventDefault()
-        let sectionID = e.currentTarget.id + "Section"
-        $('.nav li:nth-child(1)').removeClass('active')
-        $('.nav li:nth-child(2)').removeClass('active')
-        $('.nav-item a').removeClass('active')
-        $(e.target).addClass('active')
-        $('.hvr-sink i').removeClass('active')
-        if (sectionID == 'aboutArrowSection') {
-            sectionID = 'aboutSection'
-        }
-        if (sectionID == 'aboutSection') {
-            $('.hvr-sink i').removeClass('active')
-            $('.nav li:nth-child(2)').addClass('active')
-        }
-
+        let sectionID = e.currentTarget.id
+        sectionID = sectionID + 'Section'
         $('html, body').animate({
             scrollTop: $(`#${sectionID}`).offset().top - 60
         }, 1000)
+        $("#navi-toggle").click()
     })
 }
 
@@ -45,6 +34,7 @@ const branding = [
         ["img/portfolio/smoke.jpg", "Birds of Paradise"],
         ["img/portfolio/washed.jpg", "With and Without"]
     ]
+
 const showFolioPics = tabClicked => {
     let boxNum = 1
     for (let i = 0; i < 4; i++) {
@@ -53,13 +43,13 @@ const showFolioPics = tabClicked => {
         boxNum++
     }
 }
-const changeFolioPics = () => {
 
+const changeFolioPics = () => {
     showFolioPics(branding)
     $('#branding').click((e) => {
         e.preventDefault()
-        $('#branding').hasClass('hvr-active') ? $('#branding').removeClass('hvr-active') : 
-        $('.button').removeClass('hvr-active')
+        $('#branding').hasClass('hvr-active') ? $('#branding').removeClass('hvr-active') :
+            $('.button').removeClass('hvr-active')
         $('#branding').addClass('hvr-active')
         showFolioPics(branding)
     })
@@ -82,47 +72,52 @@ const changeFolioPics = () => {
         showFolioPics(campaign)
     })
 }
-const waveCounter = () => {
-    $('.count').each(() => {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-                duration: 6500,
-                easing: 'swing',
-                step: (now) => {
-                    $(this).text(Math.ceil(now))
-                }
-            })
+
+const showPressText = () => {
+    $('#strip').on('mouseover', () => {
+        $('#strip').css('opacity', '1')
+        $('#strip-ad .text-box').stop().fadeIn(300)
+        $('#paint').css('opacity', '0.5')
+        $('#paint-ad .text-box').stop().css('display', 'none')
     })
-}
-const clientQuote = () => {
-    $('.zooey span').mouseover((e) => {
-        e.preventDefault()
-        $('.clientQuote').html('\"Lorem ipsum dolor sit amet, consectetur adipisicing elit!\"')
+    $('#strip').on('mouseout', () => {
+        $('#strip').css('opacity', '0.5')
+        $('#strip-ad .text-box').stop().fadeOut(300)
+        $('#paint').css('opacity', '1')
+        $('#paint-ad .text-box').stop().fadeIn(300)
     })
-    $('.power span').mouseover((e) => {
-        e.preventDefault()
-        $('.clientQuote').html('\"Fusce hendrerit tristique ante, eget sagittis magna commodo ut!\"')
+    $('#type').on('mouseover', () => {
+        $('#type').css('opacity', '1')
+        $('#type-ad .text-box').stop().fadeIn(300)
+        $('#paint').css('opacity', '0.5')
+        $('#paint-ad .text-box').css('display', 'none')
     })
-    $('.jackie span').mouseover((e) => {
-        e.preventDefault()
-        $('.clientQuote').html('\"Vestibulum pharetra amet porta tincidunt. Donec dictum lorem sit!\"')
-    })
-    $('.ava span').mouseover((e) => {
-        e.preventDefault()
-        $('.clientQuote').html('\"Fusce cursus molestie risus eu finibus. Quisque dictum tellus!\"')
+    $('#type').on('mouseout', () => {
+        $('#type').css('opacity', '0.5')
+        $('#type-ad .text-box').stop().fadeOut(300)
+        $('#paint').css('opacity', '1')
+        $('#paint-ad .text-box').stop().fadeIn(300)
     })
 }
 
+function googleMapDisplay() {
+    const mapProp = {
+        center: { lat: 40.748069, lng: -73.991499 },
+        zoom: 15,
+    }
+    const map = new google.maps.Map(document.getElementById("googleMap"), mapProp)
+    const marker = new google.maps.Marker({ position: mapProp.center, map })
+}
+
 {
+    showPressText()
     scrollToSection()
     changeFolioPics()
-    // waveCounter()
-    clientQuote()
 
     $('.collapse').on('click', function (e) {
         e.preventDefault()
         let delta = 0
         $(this).toggleClass('active')
     })
+    googleMapDisplay()
 }
