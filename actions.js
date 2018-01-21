@@ -11,28 +11,28 @@ const scrollToSection = () => {
 }
 
 const branding = [
-    ["img/portfolio/ajuma.jpg", "South African Fashion Week"],
-    ["img/portfolio/vintage.jpg", "Pusherman"],
-    ["img/portfolio/hard.jpg", "Cine Studio"],
-    ["img/portfolio/click.jpg", "One Click Away"]
+    ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/ajuma.jpg", "South African Fashion Week"],
+    ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/vintage.jpg", "Pusherman"],
+    ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/hard.jpg", "Cine Studio"],
+    ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/click.jpg", "One Click Away"]
 ],
     webDesign = [
-        ["img/portfolio/power.jpg", "No One Man"],
-        ["img/portfolio/snob.jpg", "High Snobiety"],
-        ["img/portfolio/gall.jpg", "Lemon Neopolitan"],
-        ["img/portfolio/music.jpg", "Journey Into Sound"]
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/power.jpg", "No One Man"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/snob.jpg", "High Snobiety"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/gall.jpg", "Lemon Neopolitan"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/music.jpg", "Journey Into Sound"]
     ],
     socMedia = [
-        ["img/portfolio/maxi.jpg", "Speed of Sound"],
-        ["img/portfolio/board.jpg", "Board Walk"],
-        ["img/portfolio/range.jpg", "Range Drop, Drop Top"],
-        ["img/portfolio/chloe.jpg", "Saint & Sinner"]
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/maxi.jpg", "Speed of Sound"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/board.jpg", "Board Walk"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/range.jpg", "Range Drop, Drop Top"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/chloe.jpg", "Saint & Sinner"]
     ],
     campaign = [
-        ["img/portfolio/shades.jpg", "Vector Post Portwear"],
-        ["img/portfolio/pink.jpg", "The Audio Rendezvous"],
-        ["img/portfolio/smoke.jpg", "Birds of Paradise"],
-        ["img/portfolio/washed.jpg", "With and Without"]
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/shades.jpg", "Vector Post Portwear"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/pink.jpg", "The Audio Rendezvous"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/smoke.jpg", "Birds of Paradise"],
+        ["https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/washed.jpg", "With and Without"]
     ]
 
 const showFolioPics = tabClicked => {
@@ -73,29 +73,27 @@ const changeFolioPics = () => {
     })
 }
 
+const collapseActiveBox = () => {
+    $('.collapse').on('click', () => {
+        $('.collapse').removeClass('active')
+    })
+}
+
 const showPressText = () => {
     $('#strip').on('mouseover', () => {
-        $('#strip').css('opacity', '1')
         $('#strip-ad .text-box').stop().fadeIn(300)
-        $('#paint').css('opacity', '0.5')
         $('#paint-ad .text-box').stop().css('display', 'none')
     })
     $('#strip').on('mouseout', () => {
-        $('#strip').css('opacity', '0.5')
         $('#strip-ad .text-box').stop().fadeOut(300)
-        $('#paint').css('opacity', '1')
         $('#paint-ad .text-box').stop().fadeIn(300)
     })
     $('#type').on('mouseover', () => {
-        $('#type').css('opacity', '1')
         $('#type-ad .text-box').stop().fadeIn(300)
-        $('#paint').css('opacity', '0.5')
         $('#paint-ad .text-box').css('display', 'none')
     })
     $('#type').on('mouseout', () => {
-        $('#type').css('opacity', '0.5')
         $('#type-ad .text-box').stop().fadeOut(300)
-        $('#paint').css('opacity', '1')
         $('#paint-ad .text-box').stop().fadeIn(300)
     })
 }
@@ -113,7 +111,7 @@ function googleMapDisplay() {
     showPressText()
     scrollToSection()
     changeFolioPics()
-
+    collapseActiveBox()
     $('.collapse').on('click', function (e) {
         e.preventDefault()
         let delta = 0

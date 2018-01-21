@@ -17,9 +17,26 @@
     align-items: center;
 }
 
+#ContactSection h3 {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+#ContactSection hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -moz-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -ms-linear-gradient(left, #DAA520, #000, #DAA520);
+    background-image: -o-linear-gradient(left, #DAA520, #000, #DAA520);
+}
+
 #ContactSection .contact-main .icons {
     width: 50%;
     height: 100%;
+    padding: 0 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,7 +51,7 @@
 
 #ContactSection .contact-info>div {
     width: 100%;
-    margin: 3%;
+    margin: 3% 0;
     display: flex;
     align-items: center;
 }
@@ -43,7 +60,7 @@
     border-radius: 50px;
     border: 1px solid gray;
     padding: 15px 17.5px;
-    margin: 0 5%;
+    margin-right: 5%;
     font-size: 1.7em;
     color: #DAA520;
 }
@@ -58,14 +75,16 @@
 
 #ContactSection footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
     flex-flow: row nowrap;
+    text-align: center;
 }
 
 #ContactSection footer i {
     margin: 0 0.5%;
     transition: all .2s;
+    width: 6%;
 }
 
 #ContactSection footer i:hover {
@@ -73,17 +92,21 @@
 }
 
 #ContactSection footer i:nth-child(1):hover {
-    color:#3b5998;
+    color: #3b5998;
 }
+
 #ContactSection footer i:nth-child(2):hover {
-    color:#bc2a8d;
+    color: #bc2a8d;
 }
+
 #ContactSection footer i:nth-child(3):hover {
-    color:#fffc00;
+    color: #fffc00;
 }
+
 #ContactSection footer i:nth-child(4):hover {
-    color:#55acee;
+    color: #55acee;
 }
+
 #ContactSection footer i:nth-child(5):hover {
-    color:#ff0000;
+    color: #ff0000;
 }

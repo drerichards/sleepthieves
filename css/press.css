@@ -13,6 +13,7 @@
 }
 
 #PressSection .press-img {
+    position: relative;
     padding: 5%;
 }
 
@@ -39,11 +40,11 @@
 
 #PressSection .press-ad-img .text-box h3 {
     font-family: 'Cinzel', serif;
-    font-size: 1.35rem;
+    font-size: 1.35em;
 }
 
 #PressSection .press-ad-img .text-box p {
-    font-size: 1.15rem;
+    font-size: 1.15em;
 }
 
 #PressSection hr {
@@ -81,8 +82,8 @@
 #PressSection #strip {
     margin-top: 3%;
     z-index: 3;
-    opacity: 0.5;
-    background-image: url('../img/strips.jpg');
+    /* opacity: 0.5; */
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/strips.jpg');
 }
 
 #PressSection #paint {
@@ -90,15 +91,15 @@
     margin-top: 1%;
     left: 45%;
     z-index: 4;
-    background-image: url('../img/paint.jpg');
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/paint.jpg');
 }
 
 #PressSection #type {
     margin-top: 3%;
     right: 1%;
     z-index: 2;
-    opacity: 0.5;
-    background-image: url('../img/type.jpg');
+    /* opacity: 0.5; */
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/type.jpg');
 }
 
 #PressSection #strip,
@@ -109,7 +110,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
     position: absolute;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -120,30 +121,30 @@
 #PressSection #type:hover {
     z-index: 10;
     cursor: pointer;
-    transform: scale(1) translateY(-0.5rem);
-    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    transform: scale(1) translateY(-0.5em);
+    box-shadow: 0 2.5em 4em rgba(0, 0, 0, 0.5);
 }
 
 #PressSection #strip:hover {
-    outline: 1.5rem solid rgba(98, 115, 167, 0.7);
+    outline: 1.5em solid rgba(98, 115, 167, 0.7);
 }
 
 #PressSection #paint:hover {
-    outline: 1.5rem solid rgba(253, 215, 219, 0.7);
+    outline: 1.5em solid rgba(253, 215, 219, 0.7);
 }
 
 #PressSection #type:hover {
-    outline: 1.5rem solid rgba(104, 75, 71, 0.7);
+    outline: 1.5em solid rgba(104, 75, 71, 0.7);
 }
 
 #PressSection #strip-ad {
-    background-image: url('../img/modelbw.jpg');
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451388/sleep/modelbw.jpg');
 }
 
 #PressSection #paint-ad {
-    background-image: url('../img/model.jpg');
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451388/sleep/model.jpg');
 }
 
 #PressSection #type-ad {
-    background-image: url('../img/jack.jpg');
+    background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451388/sleep/jack.jpg');
 }

@@ -8,7 +8,7 @@
 }
 
 .logo-container h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 100;
     font-family: 'Cinzel Decorative', cursive;
     margin: 0;
@@ -32,25 +32,26 @@
 
 .navigation-button {
     background-color: #fff;
-    height: 6rem;
-    width: 6rem;
+    height: 6em;
+    width: 6em;
+    border: 1px solid hsla(0, 0%, 86%, 0.3);
     position: fixed;
-    top: 1rem;
-    right: 3rem;
+    top: 1em;
+    right: 3em;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.25);
     text-align: center;
     cursor: pointer;
 }
 
 .navigation-background {
-    height: 5rem;
-    width: 5rem;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
     position: fixed;
-    top: 1.5rem;
-    right: 3.5rem;
+    top: 1.5em;
+    right: 3.5em;
     background-image: radial-gradient(#665b25, transparent);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -60,7 +61,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -15%;
+    left: -50%;
     z-index: 1500;
     opacity: 0;
     width: 0;
@@ -69,8 +70,9 @@
 
 .navigation-list {
     position: absolute;
+    padding: 0;
     top: 50%;
-    left: 65%;
+    left: 100%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -78,14 +80,14 @@
 }
 
 .navigation-item {
-    margin: 1rem;
+    margin: 1em;
 }
 
 .navigation-link:link,
 .navigation-link:visited {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 300;
-    padding: 1rem 2rem;
+    padding: 0.5em 2em;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -93,14 +95,14 @@
     background-size: 220%;
     display: inline-block;
     transition: all .4s;
-    width: 25%;
+    width: 20%;
 }
 
 .navigation-link:hover,
 .navigation-link:active {
     background-position: 100%;
     color: #641018;
-    transform: translateX(1rem);
+    transform: translateY(-0.5em);
 }
 
 .navigation-checkbox:checked~.navigation-background {
@@ -114,13 +116,13 @@
 
 .navigation-icon {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 3em;
 }
 
 .navigation-icon,
 .navigation-icon::before,
 .navigation-icon::after {
-    width: 2.5rem;
+    width: 2.5em;
     height: 2px;
     background-color: #333;
     display: inline-block;
@@ -135,19 +137,19 @@
 }
 
 .navigation-icon::before {
-    top: -.6rem;
+    top: -.6em;
 }
 
 .navigation-icon::after {
-    top: .6rem;
+    top: .6em;
 }
 
 .navigation-button:hover .navigation-icon::before {
-    top: -1rem;
+    top: -1em;
 }
 
 .navigation-button:hover .navigation-icon::after {
-    top: 1rem;
+    top: 1em;
 }
 
 .navigation-checkbox:checked+.navigation-button .navigation-icon {

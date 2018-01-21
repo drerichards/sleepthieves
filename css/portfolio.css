@@ -8,7 +8,7 @@
 
 #PortfolioSection .portfolio-title h5 {
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 2rem;
+    font-size: 2em;
     margin: 15% 0 5%;
     font-weight: 100;
     color: #6c5d0b;
@@ -32,7 +32,7 @@
 
 #PortfolioSection .tab-row p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-family: 'Cinzel', serif;
 }
 
@@ -57,7 +57,7 @@
 
 #PortfolioSection .caption-style li {
     width: 100%;
-    height: 30rem;
+    height: 30em;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 #PortfolioSection .blur {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;
-    height: 30rem;
+    height: 30em;
     z-index: 5;
     position: absolute;
 }
@@ -160,5 +160,5 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
     border-width: 3px;
-    box-shadow: 0 0rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0em 4em rgba(0, 0, 0, 0.2);
 }

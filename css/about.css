@@ -21,11 +21,11 @@
 }
 
 #AboutSection p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 #AboutSection i {
-    font-size: 10rem;
+    font-size: 10em;
 }
 
 #AboutSection .icon-row {
@@ -42,5 +42,5 @@
 }
 
 #AboutSection .icon-box i {
-    font-size: 3rem;
+    font-size: 3em;
 }
