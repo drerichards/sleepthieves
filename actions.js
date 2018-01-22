@@ -99,12 +99,12 @@ const showPressText = () => {
 }
 
 function googleMapDisplay() {
-    const mapProp = {
-        center: { lat: 40.748069, lng: -73.991499 },
+    const uluru = { lat: 40.748069, lng: -73.991499 }
+    const map = new google.maps.Map(document.getElementById('googleMap'), {
         zoom: 15,
-    }
-    const map = new google.maps.Map(document.getElementById("googleMap"), mapProp)
-    const marker = new google.maps.Marker({ position: mapProp.center, map })
+        center: uluru
+    })
+    const marker = new google.maps.Marker({ position: uluru, map })
 }
 
 {
