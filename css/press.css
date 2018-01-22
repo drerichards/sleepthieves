@@ -1,7 +1,7 @@
 #PressSection {
     width: 100%;
-    height: 100vh;
-    margin: 2% auto;
+    height: 55vh;
+    margin: 5% auto;
 }
 
 #PressSection .press-section {
@@ -82,12 +82,11 @@
 #PressSection #strip {
     margin-top: 3%;
     z-index: 3;
-    /* opacity: 0.5; */
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/strips.jpg');
 }
 
 #PressSection #paint {
-    margin-left: -20%;
+    margin-left: -25%;
     margin-top: 1%;
     left: 45%;
     z-index: 4;
@@ -98,14 +97,13 @@
     margin-top: 3%;
     right: 1%;
     z-index: 2;
-    /* opacity: 0.5; */
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/type.jpg');
 }
 
 #PressSection #strip,
 #PressSection #paint,
 #PressSection #type {
-    width: 45%;
+    width: 60%;
     height: 90%;
     background-attachment: fixed;
     background-size: cover;
@@ -147,4 +145,19 @@
 
 #PressSection #type-ad {
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451388/sleep/jack.jpg');
+}
+
+@media screen and (min-width: 830px) {
+    #PressSection {
+        height: 100vh;
+        margin: 2% 0;
+    }
+    #PressSection #strip,
+    #PressSection #paint,
+    #PressSection #type {
+        width: 45%;
+    }
+    #PressSection #paint {
+        margin-left: -20%;
+    }
 }

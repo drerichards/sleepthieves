@@ -1,9 +1,8 @@
 #ServicesSection {
-    height: 40vh;
     width: 100%;
     padding: 3% 0;
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451391/sleep/bkgd.jpg');
-    background-size: 100% 100%;
+    background-size: 200% 100%;
     background-repeat: no-repeat;
 }
 
@@ -17,20 +16,26 @@
     letter-spacing: 3px;
 }
 
+#ServicesSection p {
+    font-size: 1.2em;
+    padding: 5%;
+}
+
 #ServicesSection .collapse-row {
     margin: 0 auto;
     width: 95%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #ServicesSection .collapse {
-    width: 25%;
+    width: 45%;
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid #eee;
     cursor: pointer;
     color: #fff;
-    padding: 2% 0;
+    padding: 5% 0;
     margin: 1%;
     max-height: 4em;
     overflow: hidden;
@@ -56,7 +61,7 @@
 }
 
 #ServicesSection .collapse h2 {
-    font-size: 18px;
+    font-size: 1em;
     font-family: 'Cinzel', serif;
     line-height: 20px;
     letter-spacing: 2px;
@@ -89,4 +94,15 @@
     background-image: -moz-linear-gradient(left, #DAA520, #fff, #DAA520);
     background-image: -ms-linear-gradient(left, #DAA520, #fff, #DAA520);
     background-image: -o-linear-gradient(left, #DAA520, #fff, #DAA520);
+}
+
+@media screen and (min-width: 830px) {
+    #ServicesSection {
+        height: 40vh;
+        background-size: 100% 100%;
+    }
+    #ServicesSection .collapse {
+        width: 25%;
+        padding: 2% 0;
+    }
 }

@@ -20,12 +20,12 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    width: 85%;
+    width: 100%;
     margin-bottom: 1%;
 }
 
 #PortfolioSection .tab-row a {
-    padding: 0.5% 4%;
+    padding: 1.5%;
     width: 25%;
     margin: 0 1%;
 }
@@ -57,7 +57,7 @@
 
 #PortfolioSection .caption-style li {
     width: 100%;
-    height: 30em;
+    height: 20em;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 #PortfolioSection .blur {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;
-    height: 30em;
+    height: 20em;
     z-index: 5;
     position: absolute;
 }
@@ -134,7 +134,7 @@
 }
 
 #PortfolioSection .hvr-active {
-    border: 3px solid #DAA520;
+    border: 0.15px solid #DAA520;
     box-shadow: 0 3px 10px rgba(22, 22, 22, 0.4);
 }
 
@@ -161,4 +161,22 @@
     transform: translateY(0);
     border-width: 3px;
     box-shadow: 0 0em 4em rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 830px) {
+    #PortfolioSection .tab-row {
+        width: 85%;
+    }
+    #PortfolioSection .tab-row a {
+        padding: 0.5% 4%;
+        width: 25%;
+        margin: 0 1%;
+    }
+    #PortfolioSection .blur,
+    #PortfolioSection .caption-style li {
+        height: 30em;
+    }
+    #PortfolioSection .hvr-active {
+        border: 3px solid #DAA520;
+    }
 }

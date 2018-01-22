@@ -73,8 +73,8 @@ const changeFolioPics = () => {
     })
 }
 
-const collapseActiveBox = () => {
-    $('.collapse').on('click', () => {
+const collapseActiveBox = (e) => {
+    $('.collapse').on('click', (e) => {
         $('.collapse').removeClass('active')
     })
 }

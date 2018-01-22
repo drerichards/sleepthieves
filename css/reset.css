@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:300|Cinzel|Cinzel+Decorative');
 * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
     box-sizing: border-box;
 }
 
 html {
     line-height: 1.15;
-    font-size: 100%;
+    font-size: 60%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Assistant', sans-serif;    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
     position: relative;
 }
 
@@ -87,8 +100,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
-}
-
+} 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -107,3 +119,9 @@ button:-moz-focusring,
 textarea {
     overflow: auto;
 }
+
+@media screen and (min-width: 830px) {
+    html {
+        font-size: 100%;
+    }
+} 

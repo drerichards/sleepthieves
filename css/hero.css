@@ -1,19 +1,25 @@
 #HeroSection {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     margin: 0 auto;
     position: relative;
 }
- #HeroSection .bg-video {
-     height: 100%;
-     width: 100%;
-     overflow: hidden;
- }
 
- #HeroSection .bg-video-content {
-     height: 100%;
-     width: 100%;
-     object-fit: cover;
- }
+#HeroSection .bg-video {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
+#HeroSection .bg-video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 830px) {
+    #HeroSection {
+        height: 80vh;
+    }
+}

@@ -1,9 +1,9 @@
 #AboutSection {
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.75em;
-    padding: 1%;
+    font-size: 1.5em;
+        padding: 6% 4%;
 }
 
 #AboutSection h2 {
@@ -16,12 +16,11 @@
     font-weight: 100;
     font-family: 'Cinzel', serif;
     margin: 1%;
-    color: #d3b305;
-    text-shadow: -1px 0px 2px #000;
+    color: #998308;
 }
 
 #AboutSection p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #AboutSection i {
@@ -42,5 +41,15 @@
 }
 
 #AboutSection .icon-box i {
-    font-size: 3em;
+    font-size: 2em;
+}
+
+@media screen and (min-width: 830px) {
+    #AboutSection {
+    font-size: 1.75em;
+        width: 60%;
+    }
+    #AboutSection .icon-box i {
+        font-size: 3em;
+    }
 }

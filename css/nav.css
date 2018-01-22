@@ -1,27 +1,26 @@
-.logo-container {
+#HomeSection {
     z-index: 999;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Cinzel', serif;
-    padding: 3.5% 1%;
+    padding: 12% 1%;
 }
 
-.logo-container h1 {
+#HomeSection h1 {
     font-size: 3em;
     font-weight: 100;
     font-family: 'Cinzel Decorative', cursive;
     margin: 0;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
-.logo-container h4 {
+#HomeSection h4 {
     color: #97404a;
     letter-spacing: 2px;
     margin: 0;
 }
 
-.logo-container i {
+#HomeSection i {
     color: #b69f31;
     margin: 0 1%;
 }
@@ -36,8 +35,8 @@
     width: 6em;
     border: 1px solid hsla(0, 0%, 86%, 0.3);
     position: fixed;
-    top: 1em;
-    right: 3em;
+    top: 3em;
+    right: 1em;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.25);
@@ -50,8 +49,8 @@
     width: 5em;
     border-radius: 50%;
     position: fixed;
-    top: 1.5em;
-    right: 3.5em;
+    top: 3.5em;
+    right: 1.5em;
     background-image: radial-gradient(#665b25, transparent);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -164,4 +163,26 @@
 .navigation-checkbox:checked+.navigation-button .navigation-icon::after {
     top: 0;
     transform: rotate(-135deg);
+}
+
+@media screen and (min-width: 830px) {
+    #HomeSection {
+        /* z-index: 999;
+        display: flex; */
+        justify-content: center;
+        /* align-items: center; */
+        /* font-family: 'Cinzel', serif; */
+        /* padding: 3.5% 1%; */
+    }
+    #HomeSection h1 {
+        letter-spacing: 5px;
+    }
+    .navigation-button {
+        top: 1em;
+        right: 3em;
+    }
+    .navigation-background {
+        top: 1.5em;
+        right: 3.5em;
+    }
 }

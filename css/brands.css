@@ -1,6 +1,6 @@
 #BrandsSection {
     display: flex;
-    height: 60vh;
+    height: 35vh;
     width: 100%;
     padding-top: 2%;
     flex-direction: column;
@@ -37,7 +37,6 @@
     padding: 2%;
     color: #6c5d0b;
     letter-spacing: 3px;
-    /* text-shadow: -1px 0px 2px #000; */
 }
 
 #BrandsSection .block {
@@ -137,3 +136,9 @@
 .mens:active {
     background-color: #60E1E0;
 }
+
+    @media screen and (min-width: 830px) {
+    #BrandsSection {
+    height: 60vh;
+    }
+    }
