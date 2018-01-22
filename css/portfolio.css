@@ -183,6 +183,7 @@
     }    #PortfolioSection img {
         width: 10%;
         height: 10%;
+        min-width: 150px;
     }
     #PortfolioSection .tab-row {
         width: 85%;

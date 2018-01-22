@@ -154,9 +154,9 @@
     }
 }
 
-@media screen and (min-width: 830px) {
+    @media screen and (min-width: 830px) and (max-width: 1499px) {
     #PressSection {
-        height: 100vh;
+        height: 80vh;
         margin: 2% 0;
     }
     #PressSection #strip,
@@ -166,5 +166,12 @@
     }
     #PressSection #paint {
         margin-left: -20%;
+    }
+}
+
+    @media screen and (min-width: 1500px) {
+    #PressSection {
+        height: 100vh;
+        margin: 2% 0;
     }
 }

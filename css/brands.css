@@ -2,7 +2,7 @@
     display: flex;
     height: 35vh;
     width: 100%;
-    padding-top: 2%;
+    margin-top: 8%;
     flex-direction: column;
 }
 
@@ -159,5 +159,6 @@
     #BrandsSection .brand-title img {
         width: 8%;
         height: 10%;
+        min-width: 120px;
     }
 }
