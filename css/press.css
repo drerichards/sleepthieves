@@ -147,6 +147,13 @@
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516451388/sleep/jack.jpg');
 }
 
+@media screen and (min-width: 320px) and (max-width: 830px) and (orientation: landscape) {
+    #PressSection {
+        height: 100vh;
+        margin: 3% auto 10%
+    }
+}
+
 @media screen and (min-width: 830px) {
     #PressSection {
         height: 100vh;

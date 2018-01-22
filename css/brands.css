@@ -29,6 +29,11 @@
     margin: 1% 0;
 }
 
+#BrandsSection .brand-title img {
+    width: 18%;
+    height: 10%;
+}
+
 #BrandsSection h1 {
     font-weight: 100;
     text-align: center;
@@ -137,8 +142,22 @@
     background-color: #60E1E0;
 }
 
-    @media screen and (min-width: 830px) {
+@media screen and (min-width: 320px) and (max-width: 830px) and (orientation: landscape) {
     #BrandsSection {
-    height: 60vh;
+        height: 80vh;
     }
+    #BrandsSection .brand-title img {
+        width: 12%;
+        height: 18%;
     }
+}
+
+@media screen and (min-width: 830px) {
+    #BrandsSection {
+        height: 60vh;
+    }
+    #BrandsSection .brand-title img {
+        width: 8%;
+        height: 10%;
+    }
+}

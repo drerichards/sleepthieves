@@ -63,7 +63,7 @@
 #ServicesSection .collapse h2 {
     font-size: 1em;
     font-family: 'Cinzel', serif;
-    line-height: 20px;
+    line-height: 30px;
     letter-spacing: 2px;
     display: inline-block;
 }
@@ -96,13 +96,44 @@
     background-image: -o-linear-gradient(left, #DAA520, #fff, #DAA520);
 }
 
+@media screen and (min-width: 320px) and (max-width: 700px) and (orientation: landscape) {
+    #ServicesSection .collapse {
+        padding: 3% 0;
+    }
+    #ServicesSection .collapse h2 {
+        font-size: 1.3em;
+    }
+    #ServicesSection p {
+        font-size: 1.4em;
+        padding: 4%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 830px) and (orientation: landscape) {
+    #ServicesSection .collapse {
+        padding: 2% 0;
+    }
+    #ServicesSection .collapse h2 {
+        font-size: 1.4em;
+    }
+    #ServicesSection p {
+        font-size: 1.5em;
+        padding: 4%;
+    }
+}
+
 @media screen and (min-width: 830px) {
     #ServicesSection {
-        height: 40vh;
         background-size: 100% 100%;
     }
     #ServicesSection .collapse {
         width: 25%;
         padding: 2% 0;
+    }
+        #ServicesSection .collapse h2 {
+            line-height: 50px;
+        }
+    #ServicesSection>p{
+        padding: 1%;
     }
 }

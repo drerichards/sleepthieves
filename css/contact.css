@@ -67,7 +67,7 @@
 #ContactSection .contact-info i {
     border-radius: 50px;
     border: 1px solid gray;
-    padding: 15px 17.5px;
+    padding: 14px 15.5px;
     margin-right: 5%;
     font-size: 1.7em;
     color: #DAA520;
@@ -78,7 +78,7 @@
 }
 
 #ContactSection .contact-info>div:nth-child(2)>i {
-    padding: 15px 21.5px;
+    padding: 14px 17.5px;
 }
 
 #ContactSection footer {
@@ -133,5 +133,8 @@
     }
     #ContactSection .contact-info {
         flex-flow: column wrap;
+    }
+    #ContactSection .contact-info i {
+        padding: 15px 17.5px;
     }
 }

@@ -94,7 +94,6 @@
     background-size: 220%;
     display: inline-block;
     transition: all .4s;
-    width: 20%;
 }
 
 .navigation-link:hover,
@@ -165,14 +164,29 @@
     transform: rotate(-135deg);
 }
 
+@media screen and (min-width: 320px) and (max-width: 830px) and (orientation: landscape) {
+    #HomeSection {
+        justify-content: center;
+        padding: 3.5% 1%;
+    }
+    .navigation-button {
+        top: 1em;
+        right: 2em;
+    }
+    .navigation-background {
+        top: 1.5em;
+        right: 2.5em;
+    }
+    .navigation-link:link,
+    .navigation-link:visited {
+        padding: 0.1em 2em;
+    }
+}
+
 @media screen and (min-width: 830px) {
     #HomeSection {
-        /* z-index: 999;
-        display: flex; */
         justify-content: center;
-        /* align-items: center; */
-        /* font-family: 'Cinzel', serif; */
-        /* padding: 3.5% 1%; */
+        padding: 5% 1%;
     }
     #HomeSection h1 {
         letter-spacing: 5px;
