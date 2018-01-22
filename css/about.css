@@ -20,7 +20,7 @@
 }
 
 #AboutSection p {
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 #AboutSection i {
@@ -55,8 +55,5 @@
         font-size: 1.75em;
         width: 60%;
         padding: 3% 1%;
-    }
-    #AboutSection .icon-box i {
-        font-size: 3em;
     }
 }

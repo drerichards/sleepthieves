@@ -41,7 +41,7 @@
 }
 
 #ContactSection .contact-main .icons {
-    height: 100%;
+    /* height: 100%; */
     padding: 0 4%;
     flex: 1 0 40%;
     display: flex;
@@ -65,20 +65,15 @@
 }
 
 #ContactSection .contact-info i {
-    border-radius: 50px;
-    border: 1px solid gray;
-    padding: 14px 15.5px;
-    margin-right: 5%;
+    padding: 6% 0;
+    width: 12%;
+    min-width: 35px;
     font-size: 1.7em;
     color: #DAA520;
 }
 
 #ContactSection .contact-info p {
     display: inline-block;
-}
-
-#ContactSection .contact-info>div:nth-child(2)>i {
-    padding: 14px 17.5px;
 }
 
 #ContactSection footer {
@@ -123,7 +118,7 @@
 @media screen and (min-width: 830px) {
     #ContactSection {
         height: 45vh;
-        padding: 2%;
+        padding: 2% 15%;
     }
     #ContactSection .contact-main {
         width: 50%;
@@ -135,6 +130,6 @@
         flex-flow: column wrap;
     }
     #ContactSection .contact-info i {
-        padding: 15px 17.5px;
+        min-width: 45px;
     }
 }
