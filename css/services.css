@@ -35,18 +35,18 @@
     border-bottom: 1px solid #eee;
     cursor: pointer;
     color: #fff;
-    padding: 5% 0;
-    margin: 1%;
-    max-height: 4em;
+    /* padding: 5% 0; */
+    margin: 1em 1%;
+    max-height: 3.3em;
     overflow: hidden;
-    transition: all 0.4s, max-height .001s;
+    transition: all 0.4s, max-height .4s;
 }
 
 #ServicesSection .collapse * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    transition: all .002s;
+    transition: all .4s;
 }
 
 #ServicesSection .collapse.active {
@@ -111,7 +111,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 830px) and (orientation: landscape) {
     #ServicesSection .collapse {
-        padding: 2% 0;
+        /* padding: 2% 0; */
     }
     #ServicesSection .collapse h2 {
         font-size: 1.4em;
@@ -128,7 +128,7 @@
     }
     #ServicesSection .collapse {
         width: 25%;
-        padding: 2% 0;
+        /* padding: 2.5% 0; */
     }
         #ServicesSection .collapse h2 {
             line-height: 50px;

@@ -88,7 +88,7 @@
 #PressSection #paint {
     margin-left: -25%;
     margin-top: 1%;
-    left: 45%;
+    left: 50%;
     z-index: 4;
     background-image: url('https://res.cloudinary.com/andrerichards/image/upload/v1516452423/sleep/paint.jpg');
 }
@@ -103,7 +103,7 @@
 #PressSection #strip,
 #PressSection #paint,
 #PressSection #type {
-    width: 60%;
+    width: 50%;
     height: 90%;
     background-attachment: fixed;
     background-size: cover;
@@ -154,7 +154,7 @@
     }
 }
 
-    @media screen and (min-width: 830px) and (max-width: 1499px) {
+@media screen and (min-width: 830px) {
     #PressSection {
         height: 80vh;
         margin: 2% 0;
@@ -162,16 +162,22 @@
     #PressSection #strip,
     #PressSection #paint,
     #PressSection #type {
-        width: 45%;
+        width: 40%;
     }
     #PressSection #paint {
         margin-left: -20%;
     }
+    #PressSection #type {
+        right: 5%;
+    }
+    #PressSection .press-section {
+        padding: 0 5%;
+    }
 }
 
-    @media screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
     #PressSection {
-        height: 100vh;
+        height: 95vh;
         margin: 2% 0;
     }
 }

@@ -37,7 +37,7 @@
     position: relative;
     overflow: hidden;
     flex: 1 0 60%;
-    min-height: 20em;
+    /* min-height: 20em; */
 }
 
 #ContactSection .contact-main .icons {
@@ -50,11 +50,11 @@
 }
 
 #ContactSection .contact-info {
-    display: flex;
+    /* display: flex;
     width: 100%;
     flex: 1 0 100%;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 #ContactSection .contact-info>div {
@@ -79,7 +79,8 @@
 #ContactSection footer {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    margin-top: 1em;
+    /* align-items: baseline; */
     flex-flow: row nowrap;
     text-align: center;
 }
