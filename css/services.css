@@ -35,11 +35,9 @@
     border-bottom: 1px solid #eee;
     cursor: pointer;
     color: #fff;
-    /* padding: 5% 0; */
     margin: 1em 1%;
     max-height: 3.3em;
     overflow: hidden;
-    transition: all 0.4s, max-height .4s;
 }
 
 #ServicesSection .collapse * {
