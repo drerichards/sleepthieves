@@ -8,7 +8,7 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><h1 id="simify">Simify</h1>
+  <div class="stackedit__html"><h1 id="sleep_thieves">Sleep Thieves</h1>
 <p><strong>Simify</strong> A Website design based upon the idea of concepting for a digital advertising agency as a client. Originally done with Bootstrap, it was completely redesigned and formatted with pure CSS. Light use of Google Maps.</p>
 <h2 id="links">Links</h2>
 <p>Live site: <a href="https://drerichards.github.io/sleepthieves/">https://drerichards.github.io/sleepthieves/</a></p>
